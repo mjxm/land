@@ -1,9 +1,12 @@
 {
   "name": "land",
-  "version": "1.0.0",
-  "description": "a project ",
-  "author": "",
-  "license": "ISC",
+  "version": "0.1.0",
+  "description": "An application to manage completed work for a business providing a service such as landscaping, construction, and other artisan focused areas.",
+  "author": "Martin Mena",
+  "repository" :{ 
+    "type" : "git", 
+    "url" : "https://github.com/programmingpanda/land.git"
+  },
   "devDependencies": {
     "babelify": "^5.0.4",
     "browser-sync": "^2.3.1",
