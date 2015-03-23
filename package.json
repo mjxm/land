@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "description": "An application to manage completed work for a business providing a service such as landscaping, construction, and other artisan focused areas.",
   "author": "Martin Mena",
-  "repository" :{ 
-    "type" : "git", 
-    "url" : "https://github.com/programmingpanda/land.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/programmingpanda/land.git"
   },
   "devDependencies": {
     "babelify": "^5.0.4",
@@ -15,6 +15,7 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
-    "react": "^0.13.1"
+    "react": "^0.13.1",
+    "react-widgets": "^2.3.3"
   }
 }
