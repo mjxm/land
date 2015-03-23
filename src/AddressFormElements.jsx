@@ -1,7 +1,10 @@
 import React from 'react';
 
-class AddressFormElements extends React.Component{
-  render(){
+let AddressFormElements = React.createClass({
+  getDefaultProps: function(){
+     return {address:{name:"",street:"",city:"",state:"",zip:""}};
+ },
+  render: function(){
     return (
       <div style={{clear:"both"}}>
         <div>
@@ -42,8 +45,5 @@ class AddressFormElements extends React.Component{
       </div>
     )
   }
-}
-
-AddressFormElements.defaultProps = {address:{name:"",street:"",city:"",state:"",zip:""}};
-
+});
 export default AddressFormElements;
