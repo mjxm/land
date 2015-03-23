@@ -4,8 +4,8 @@ var babelify = require('babelify');
 var source = require('vinyl-source-stream');
 var browserSync = require('browser-sync');
 
-gulp.task('build', function () {
-  browserify({
+gulp.task('jsx', function () {
+  return browserify({
     entries: './src/app.jsx',
     extensions: ['.jsx'],
     debug: true
@@ -24,6 +24,6 @@ gulp.task('browser-sync', function() {
     });
 });
 
-gulp.task('default', ['browser-sync'], function () {
-    gulp.watch("src/*.jsx", ['build', browserSync.reload]);
+gulp.task('default', ['jsx','browser-sync'], function () {
+    gulp.watch("src/*.jsx", ['jsx', browserSync.reload]);
 });
